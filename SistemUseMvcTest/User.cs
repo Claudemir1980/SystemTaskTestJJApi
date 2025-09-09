@@ -19,6 +19,7 @@ namespace SistemUseMvcTest
 
 
         [Required(ErrorMessage = "Informe o seu email")]
+        [Display(Name = "E-mail do Usuário")]
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe um email válido...")]
         public string? email  { get; set; }
 
